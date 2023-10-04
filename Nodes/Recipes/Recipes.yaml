@@ -1,0 +1,98 @@
+Name: Recipes
+Type: FolderType
+Children:
+- Name: RecipeSchema1
+  Id: g=704807f4d8faf4f9e5c6bac77948fa0f
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Variables
+      Type: BaseObjectType
+      Children:
+      - Name: Temperature
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Ingredient1
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Ingredient2
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+  - Class: Reference
+    Target: ns=17;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=60
+    Direction: Forward
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"be18e489f72335ef41ffad5dd0f8727b","Namespace":32}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"37fd3b3a84010044dc1912717caa6ac5","Namespace":32}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":11}
+  - Name: EditModel
+    Id: g=81b38ce5bd25fd3e309b8e14d1e900e8
+    Type: BaseObjectType
+    Children:
+    - Name: Variables
+      Type: BaseObjectType
+      Children:
+      - Name: Temperature
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Ingredient1
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Ingredient2
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0

@@ -1,0 +1,13 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: Controller Tags/Controller Tags.yaml
+- Name: 'ControllerTag '
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""

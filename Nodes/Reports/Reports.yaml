@@ -1,0 +1,4 @@
+Name: Reports
+Type: ReportsCategoryFolder
+Children:
+- File: Recipes/Recipes.yaml

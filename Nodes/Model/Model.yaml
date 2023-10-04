@@ -1,0 +1,71 @@
+Name: Model
+Id: g=be18e489f72335ef41ffad5dd0f8727b
+Type: ModelCategoryFolder
+Children:
+- File: mod/mod.yaml
+- File: Variables/Variables.yaml
+- File: PieChart Variables/PieChart Variables.yaml
+- Name: Motorr
+  Id: g=51d0d5138d7a27ac8459112ecc7a2edd
+  Supertype: BaseObjectType
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: label
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: Motorr1
+  Id: g=4cdcd8bb9047e2d594663aa3e9b97762
+  Type: Motorr
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 23.0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 67
+  - Name: label
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "motor1"
+- Name: Motorr2
+  Id: g=410187a8f1ffc26e38f86c15dc76db24
+  Type: Motorr
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 5.0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 89
+  - Name: label
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "motor2"
+- Name: Motorr3
+  Id: g=7d8215126ac75cd8b2430540a4e48e09
+  Type: Motorr
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 23.0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 98
+  - Name: label
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "motor3"
