@@ -3,12 +3,10 @@ Id: g=367f0ff99b8d0ceef92a11393849ed7e
 Type: FolderType
 Children:
 - Name: Variable1
-  Id: g=18173dae5af67ded41e08cf791335b76
   Type: BaseDataVariableType
   DataType: Int32
   Value: 5
 - Name: Variable2
-  Id: g=9cb6586cf95060187600e2fa22b22aff
   Type: BaseDataVariableType
   DataType: Int32
   Value: 2

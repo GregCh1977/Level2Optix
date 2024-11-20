@@ -4,7 +4,7 @@ Type: ModelCategoryFolder
 Children:
 - File: mod/mod.yaml
 - File: Variables/Variables.yaml
-- File: PieChart Variables/PieChart Variables.yaml
+- File: PieChart_Variables/PieChart_Variables.yaml
 - Name: Motorr
   Id: g=51d0d5138d7a27ac8459112ecc7a2edd
   Supertype: BaseObjectType
@@ -12,11 +12,9 @@ Children:
   - Name: Power
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.0
   - Name: Speed
     Type: BaseDataVariableType
     DataType: Int16
-    Value: 0
   - Name: label
     Type: BaseDataVariableType
     DataType: String

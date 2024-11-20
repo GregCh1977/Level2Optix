@@ -21,7 +21,6 @@ Children:
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -46,6 +45,30 @@ Children:
   - Class: Reference
     Type: GeneratesEvent
     Target: g=57a4b665de49c5b5239443f9b56edbd7
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: DigitalAlarm1
   Type: OffNormalAlarmController
   Children:
@@ -56,7 +79,6 @@ Children:
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -88,7 +110,6 @@ Children:
     - Name: InputValue
       Type: BaseDataVariableType
       DataType: Double
-      Value: 0.0
     - Name: LastEvent
       Type: BaseDataVariableType
       DataType: BaseDataType
@@ -100,13 +121,60 @@ Children:
       Target: ns=19;i=82
     - Class: Reference
       Target: ns=19;i=83
+    - Class: Reference
+      Target: ns=19;i=130
+      Direction: Forward
+    - Class: Reference
+      Target: ns=19;i=132
+      Direction: Forward
+    - Class: Reference
+      Target: ns=19;i=135
+      Direction: Forward
+    - Class: Reference
+      Target: ns=19;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=19;i=148
+      Direction: Forward
+    - Class: Reference
+      Target: ns=19;i=150
+      Direction: Forward
+    - Class: Reference
+      Target: ns=19;i=152
+      Direction: Forward
+    - Class: Reference
+      Target: ns=19;i=154
+      Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: ExclusiveLevelAlarm2
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -136,13 +204,36 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"Warm"}
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: ExclusiveLevelAlarm3
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -175,13 +266,36 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"HOT"}
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: ExclusiveLevelAlarm1
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -211,3 +325,27 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"Warning!"}
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward

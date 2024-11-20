@@ -5,14 +5,14 @@ Children:
   Type: PropertyGroup
   Children:
   - Name: Locales
-    Type: PropertyType
-    DataType: String
+    Type: BaseDataVariableType
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
   - Name: LocaleFallbackList
-    Type: PropertyType
-    DataType: String
+    Type: BaseDataVariableType
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
@@ -22,30 +22,27 @@ Children:
   - Name: DefaultUserFolder
     Type: NodePointer
     DataType: NodeId
-    ReferenceType: HasProperty
-    Value: {"IdType":2,"Id":"944e2a19d5a5b460d8a4a632e1777ed2","Namespace":32}
+    Value: "/Objects/Level2Optix/Security/Users"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
 - Name: PasswordPolicy
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: UInt16
-    Value: 0
   - Name: EnforcePasswordHistory
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: UInt16
-    Value: 0
   - Name: MinimumPasswordLength
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - Name: AlarmConfiguration
@@ -69,9 +66,9 @@ Children:
 - Name: RecipeSchema1
   Type: Alias
   DataType: NodeId
-  Value: {"IdType":2,"Id":"81b38ce5bd25fd3e309b8e14d1e900e8","Namespace":32}
+  Value: "/Objects/Level2Optix/Recipes/RecipeSchema1/EditModel"
   Children:
   - Name: Kind
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":2,"Id":"81b38ce5bd25fd3e309b8e14d1e900e8","Namespace":32}
+    Value: "/Objects/Level2Optix/Recipes/RecipeSchema1/EditModel"

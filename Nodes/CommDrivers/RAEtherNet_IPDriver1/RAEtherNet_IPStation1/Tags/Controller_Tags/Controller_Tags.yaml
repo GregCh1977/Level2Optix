@@ -1,0 +1,45 @@
+Name: Controller Tags
+Type: FolderType
+Children:
+- Name: Motors
+  Type: Motor
+  DataType: Motor
+  ValueRank: OneDimension
+  ArrayDimensions: [5]
+  Children:
+  - Name: 0
+    Type: Motor
+    DataType: Motor
+    Children:
+    - Name: Power
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[0].Power"
+    - Name: Speed
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[0].Speed"
+- Name: format
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "format"
+- Name: formatt
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "formatt"

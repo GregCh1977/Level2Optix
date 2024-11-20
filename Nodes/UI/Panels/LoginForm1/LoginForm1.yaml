@@ -9,12 +9,11 @@ Children:
   - Name: Panel
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":71,"Namespace":5}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: ConditionalConverter1
       Type: ConditionalConverter
       Children:
@@ -22,7 +21,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         ReferenceType: HasSource
-        Value: false
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -33,23 +31,22 @@ Children:
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"2eebfd3def044e747aa57952fc13c70d","Namespace":32}
+        Value: "/Objects/Level2Optix/UI/Panels/LoginForm1/LoginFormComponents/Logout"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"ce814fddddd607c776a3b9a6e0b90c27","Namespace":32}
+        Value: "/Objects/Level2Optix/UI/Panels/LoginForm1/LoginFormComponents/Login"
   - Name: CurrentPanel
     Type: NodePointer
     DataType: NodeId
     AccessLevel: Read
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":6,"Namespace":5}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
   - Class: Reference
     Target: ns=5;i=478
   - Name: Width
@@ -65,14 +62,13 @@ Children:
   - Name: Users
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: PanelAliasNode
     Type: BaseDataVariableType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    ValueRank: ScalarOrOneDimension
 - File: LoginFormComponents/LoginFormComponents.yaml

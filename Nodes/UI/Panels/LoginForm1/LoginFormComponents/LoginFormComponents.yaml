@@ -22,37 +22,33 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"944e2a19d5a5b460d8a4a632e1777ed2","Namespace":32}
+      Value: "/Objects/Level2Optix/Security/Users"
       Children:
       - Name: ItemKind
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":14,"Namespace":1}
+        Value: "/Types/ObjectTypes/BaseObjectType/UserType"
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: SelectedValue
       Type: BaseDataVariableType
       DataType: BaseDataType
     - Name: SelectedItem
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":14,"Namespace":1}
+        Value: "/Types/ObjectTypes/BaseObjectType/UserType"
     - Name: UISelectedItem
       Type: BaseDataVariableType
       DataType: NodeId
       AccessLevel: Read
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: UISelectedValue
       Type: BaseDataVariableType
       DataType: BaseDataType
@@ -67,12 +63,11 @@ Children:
     - Name: Item
       Type: Alias
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":14,"Namespace":1}
+        Value: "/Types/ObjectTypes/BaseObjectType/UserType"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -88,7 +83,6 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -146,19 +140,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: RightMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: MouseClickEventHandler1
       Type: EventHandler
       Children:
       - Name: ListenEventType
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":5}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
@@ -168,12 +160,11 @@ Children:
           - Name: ns=3;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
             Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
@@ -194,7 +185,6 @@ Children:
             - Name: username
               Type: BaseDataVariableType
               DataType: String
-              Value: ""
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
@@ -209,7 +199,6 @@ Children:
             - Name: password
               Type: BaseDataVariableType
               DataType: String
-              Value: ""
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
@@ -227,35 +216,27 @@ Children:
         - Name: EventId
           Type: PropertyType
           DataType: ByteString
-          Value: ""
         - Name: EventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceNode
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceName
           Type: PropertyType
           DataType: String
-          Value: ""
         - Name: Time
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ReceiveTime
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Message
           Type: PropertyType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-          Value: 0
     - Name: LoginButtonLogic
       Type: NetLogic
       Children:
@@ -285,7 +266,6 @@ Children:
     - Name: Message
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
       Children:
       - Name: KeyValueConverter1
         Type: ValueMapConverter
@@ -299,7 +279,7 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../LoginResultCode"
-        - Name: Pairs
+        - Name: ns=3;Pairs
           Type: BaseObjectType
           ModellingRule: None
           Children:
@@ -311,7 +291,6 @@ Children:
               Type: BaseDataVariableType
               DataType: UInt32
               ModellingRule: None
-              Value: 0
             - Name: Value
               Type: BaseDataVariableType
               DataType: LocalizedText
@@ -404,11 +383,9 @@ Children:
     - Name: LoginResultCode
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -430,21 +407,21 @@ Children:
   - Name: Users
     Type: Alias
     DataType: NodeId
-    Value: {"IdType":2,"Id":"944e2a19d5a5b460d8a4a632e1777ed2","Namespace":32}
+    Value: "/Objects/Level2Optix/Security/Users"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: PasswordExpiredDialogType
     Type: Alias
     DataType: NodeId
-    Value: {"IdType":2,"Id":"53b1bd1b17b4de66926108a7dfdf143e","Namespace":32}
+    Value: "/Objects/Level2Optix/UI/Panels/LoginForm1/LoginFormComponents/LoginPasswordExpiredDialog"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":515,"Namespace":5}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Dialog"
 - Name: LoginPasswordExpiredDialog
   Id: g=53b1bd1b17b4de66926108a7dfdf143e
   Supertype: Dialog
@@ -544,7 +521,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: ValueChangeBehaviour
           Type: BaseDataVariableType
           DataType: ValueChangeBehaviour
@@ -558,7 +534,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: ValueChangeBehaviour
           Type: BaseDataVariableType
           DataType: ValueChangeBehaviour
@@ -572,7 +547,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: ValueChangeBehaviour
           Type: BaseDataVariableType
           DataType: ValueChangeBehaviour
@@ -592,7 +566,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":5}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -602,12 +576,11 @@ Children:
               - Name: ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -628,7 +601,6 @@ Children:
                 - Name: oldPassword
                   Type: BaseDataVariableType
                   DataType: String
-                  Value: ""
                   Children:
                   - Name: DynamicLink
                     Type: DynamicLink
@@ -637,7 +609,6 @@ Children:
                 - Name: newPassword
                   Type: BaseDataVariableType
                   DataType: String
-                  Value: ""
                   Children:
                   - Name: DynamicLink
                     Type: DynamicLink
@@ -646,7 +617,6 @@ Children:
                 - Name: confirmPassword
                   Type: BaseDataVariableType
                   DataType: String
-                  Value: ""
                   Children:
                   - Name: DynamicLink
                     Type: DynamicLink
@@ -658,42 +628,33 @@ Children:
             - Name: EventId
               Type: PropertyType
               DataType: ByteString
-              Value: ""
             - Name: EventType
               Type: PropertyType
               DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
             - Name: SourceNode
               Type: PropertyType
               DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
             - Name: SourceName
               Type: PropertyType
               DataType: String
-              Value: ""
             - Name: Time
               Type: PropertyType
               DataType: UtcTime
-              Value: "1601-01-01T00:00:00.0000000"
             - Name: ReceiveTime
               Type: PropertyType
               DataType: UtcTime
-              Value: "1601-01-01T00:00:00.0000000"
             - Name: Message
               Type: PropertyType
               DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
             - Name: Severity
               Type: PropertyType
               DataType: UInt16
-              Value: 0
       - Name: ChangePasswordFormOutputMessage
         Type: Label
         Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           Children:
           - Name: DynamicLink
             Type: DynamicLink
@@ -718,7 +679,6 @@ Children:
         - Name: Message
           Type: BaseDataVariableType
           DataType: String
-          Value: ""
           Children:
           - Name: KeyValueConverter1
             Type: ValueMapConverter
@@ -732,7 +692,7 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../ChangePasswordResultCode"
-            - Name: Pairs
+            - Name: ns=3;Pairs
               Type: BaseObjectType
               ModellingRule: None
               Children:
@@ -837,7 +797,6 @@ Children:
         - Name: ChangePasswordResultCode
           Type: BaseDataVariableType
           DataType: Int32
-          Value: 0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -851,12 +810,11 @@ Children:
   - Name: UserWithExpiredPassword
     Type: Alias
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":14,"Namespace":1}
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
 - Name: LoginChangePasswordForm
   Id: g=fc0d46c3cf6fc6f7faace8fa13bde2b5
   Supertype: Panel
@@ -901,7 +859,6 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -961,7 +918,6 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -1021,7 +977,6 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -1095,7 +1050,7 @@ Children:
       - Name: ListenEventType
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":5}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
@@ -1105,12 +1060,11 @@ Children:
           - Name: ns=3;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
             Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
@@ -1131,7 +1085,6 @@ Children:
             - Name: oldPassword
               Type: BaseDataVariableType
               DataType: String
-              Value: ""
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
@@ -1146,7 +1099,6 @@ Children:
             - Name: newPassword
               Type: BaseDataVariableType
               DataType: String
-              Value: ""
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
@@ -1161,7 +1113,6 @@ Children:
             - Name: confirmPassword
               Type: BaseDataVariableType
               DataType: String
-              Value: ""
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
@@ -1179,19 +1130,17 @@ Children:
             - Name: resultCode
               Type: BaseDataVariableType
               DataType: Int32
-              Value: 0
         - Name: MethodContainer2
           Type: BaseObjectType
           Children:
           - Name: ns=3;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
             Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
@@ -1212,7 +1161,6 @@ Children:
             - Name: message
               Type: BaseDataVariableType
               DataType: String
-              Value: ""
               Children:
               - Name: KeyValueConverter1
                 Type: ValueMapConverter
@@ -1226,7 +1174,7 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../../MethodContainer1/OutputArguments/resultCode"
-                - Name: Pairs
+                - Name: ns=3;Pairs
                   Type: BaseObjectType
                   ModellingRule: None
                   Children:
@@ -1238,7 +1186,6 @@ Children:
                       Type: BaseDataVariableType
                       DataType: UInt32
                       ModellingRule: None
-                      Value: 0
                     - Name: Value
                       Type: BaseDataVariableType
                       DataType: String
@@ -1348,42 +1295,33 @@ Children:
         - Name: EventId
           Type: PropertyType
           DataType: ByteString
-          Value: ""
         - Name: EventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceNode
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceName
           Type: PropertyType
           DataType: String
-          Value: ""
         - Name: Time
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ReceiveTime
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Message
           Type: PropertyType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-          Value: 0
   - Name: ChangePasswordFormOutputMessage
     Type: Label
     Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -1411,7 +1349,6 @@ Children:
     - Name: Message
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -1461,7 +1398,7 @@ Children:
       - Name: ListenEventType
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":5}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
@@ -1471,12 +1408,11 @@ Children:
           - Name: ns=3;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
             Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
@@ -1497,35 +1433,27 @@ Children:
         - Name: EventId
           Type: PropertyType
           DataType: ByteString
-          Value: ""
         - Name: EventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceNode
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceName
           Type: PropertyType
           DataType: String
-          Value: ""
         - Name: Time
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ReceiveTime
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Message
           Type: PropertyType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-          Value: 0
   - Name: CurrentUserText
     Type: Label
     Children:
@@ -1545,7 +1473,6 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink

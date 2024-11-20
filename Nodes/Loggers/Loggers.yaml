@@ -2,6 +2,7 @@ Name: Loggers
 Type: LoggersCategoryFolder
 Children:
 - Name: DataLogger1
+  Id: g=372f806f9dd1db30dce0cfbea2aa21ed
   Type: ns=7;DataLogger
   Children:
   - Name: SamplingMode
@@ -11,12 +12,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"37fd3b3a84010044dc1912717caa6ac5","Namespace":32}
+    Value: "/Objects/Level2Optix/DataStores/DataLogDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":11}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -25,7 +26,6 @@ Children:
       DataType: BaseDataType
       Children:
       - Name: LastValue
-        Id: g=f14f754de9ca3f2d904eb6a66c51027c
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -33,12 +33,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -60,12 +58,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -87,12 +83,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -114,12 +108,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -141,12 +133,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -161,7 +151,6 @@ Children:
       DataType: BaseDataType
       Children:
       - Name: LastValue
-        Id: g=893f549a90a2ba7a5a4351d58616e849
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -169,12 +158,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -201,12 +188,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"9d66da5b951791231cb420b97a9eb901","Namespace":32}
+    Value: "/Objects/Level2Optix/DataStores/EventDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":11}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: EventConfigurations
     Type: BaseObjectType
     Children:
@@ -217,22 +204,22 @@ Children:
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: {"Id":2100}
+        Value: "/Types/EventTypes/BaseEventType/AuditEventType/AuditUpdateEventType/AuditWriteUpdateEventType"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":2041}
+          Value: "/Types/EventTypes/BaseEventType"
       - Name: EventSource
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: {"IdType":2,"Id":"b731bcdff42e6f25f7421fd8046853a6","Namespace":32}
+        Value: "/Objects/Level2Optix/Model/Variables"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":58}
+          Value: "/Types/ObjectTypes/BaseObjectType"
   - Name: EventFieldPaths
     Type: BaseObjectType
     Children:
@@ -270,27 +257,21 @@ Children:
     - Name: EventTypeId
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: EventType
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: SourceName
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: SourceNode
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: Time
       Type: BaseDataVariableType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
     - Name: ClientUserId
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: NewValue
       Type: BaseDataVariableType
       DataType: BaseDataType
@@ -305,7 +286,6 @@ Children:
     - Name: EventType
       Type: EventFieldToLog
       DataType: String
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -314,7 +294,6 @@ Children:
     - Name: SourceName
       Type: EventFieldToLog
       DataType: String
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -323,7 +302,6 @@ Children:
     - Name: SourceNode
       Type: EventFieldToLog
       DataType: String
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -332,7 +310,6 @@ Children:
     - Name: Time
       Type: EventFieldToLog
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -341,7 +318,6 @@ Children:
     - Name: ClientUserId
       Type: EventFieldToLog
       DataType: String
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -351,7 +327,6 @@ Children:
       Type: EventFieldToLog
       DataType: Int32
       ValueRank: Any
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -361,7 +336,6 @@ Children:
       Type: EventFieldToLog
       DataType: Int32
       ValueRank: Any
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -379,16 +353,15 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"c78dd6002394edbe0a38760823a58117","Namespace":32}
+    Value: "/Objects/Level2Optix/DataStores/AlarmDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":11}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
     - Name: NodeClass
       Type: PropertyType
       DataType: NodePointerNodeClass
-      Value: 0
   - Name: EventFieldPaths
     Type: BaseObjectType
     Children:
@@ -441,17 +414,16 @@ Children:
       - Name: MonitorSubtree
         Type: PropertyType
         DataType: Boolean
-        Value: false
       - Name: EventType
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: {"Id":2915}
+        Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":2041}
+          Value: "/Types/EventTypes/BaseEventType"
         - Name: NodeClass
           Type: PropertyType
           DataType: NodePointerNodeClass
@@ -462,63 +434,42 @@ Children:
     - Name: ActiveState_Id
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: AckedState_Id
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: ConfirmedState_Id
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: ConditionName
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: EnabledState_Id
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: SourceName
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: Time
       Type: BaseDataVariableType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
     - Name: Message
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Severity
       Type: BaseDataVariableType
       DataType: UInt16
-      Value: 0
     - Name: EventTypeId
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: LocalTime
       Type: BaseDataVariableType
       DataType: TimeZoneDataType
-      Value: 
-       {
-        "TypeId": {
-         "Id": 8912
-        },
-        "Body": {
-         "offset": 0,
-         "daylightSavingInOffset": false
-        }
-       }
   - Name: EventFieldsToLog
     Type: BaseObjectType
     Children:
     - Name: ActiveState_Id
       Type: EventFieldToLog
       DataType: Boolean
-      Value: false
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -532,7 +483,6 @@ Children:
     - Name: AckedState_Id
       Type: EventFieldToLog
       DataType: Boolean
-      Value: false
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -546,7 +496,6 @@ Children:
     - Name: ConfirmedState_Id
       Type: EventFieldToLog
       DataType: Boolean
-      Value: false
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -560,7 +509,6 @@ Children:
     - Name: ConditionName
       Type: EventFieldToLog
       DataType: String
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -574,7 +522,6 @@ Children:
     - Name: EnabledState_Id
       Type: EventFieldToLog
       DataType: Boolean
-      Value: false
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -588,7 +535,6 @@ Children:
     - Name: SourceName
       Type: EventFieldToLog
       DataType: String
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -602,7 +548,6 @@ Children:
     - Name: Time
       Type: EventFieldToLog
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -616,7 +561,6 @@ Children:
     - Name: Message
       Type: EventFieldToLog
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -630,7 +574,6 @@ Children:
     - Name: Severity
       Type: EventFieldToLog
       DataType: UInt16
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -644,7 +587,6 @@ Children:
     - Name: LocalTime
       Type: EventFieldToLog
       DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
       Children:
       - Name: ExpressionEvaluator1
         Type: ExpressionEvaluator
@@ -677,19 +619,18 @@ Children:
   Type: ns=7;DataLogger
   Children:
   - Name: SamplingMode
-    Id: g=7b2407234e12ed1d8e8289a81a542d8b
     Type: PropertyType
     DataType: SamplingModeEnum
     Value: 1
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"03e59649ff0b611ecf6dad35eb671f10","Namespace":32}
+    Value: "/Objects/Level2Optix/DataStores/L2Optix_datastore"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":11}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -705,12 +646,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -732,12 +671,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -759,12 +696,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -786,12 +721,10 @@ Children:
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: LastOperationCode
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
-        Value: 0
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
@@ -811,7 +744,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:5.0000000"
+    Value: "0:00:00:05.0000000"
 - Name: L2OptixEventLogger
   Type: EventLogger
   Children:
@@ -822,12 +755,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"b5e32a2b30d1a289db21d6edf39c30c4","Namespace":32}
+    Value: "/Objects/Level2Optix/DataStores/L2OptixEventlogger"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":11}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: EventConfigurations
     Type: BaseObjectType
     Children:
@@ -838,22 +771,22 @@ Children:
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: {"Id":2100}
+        Value: "/Types/EventTypes/BaseEventType/AuditEventType/AuditUpdateEventType/AuditWriteUpdateEventType"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":2041}
+          Value: "/Types/EventTypes/BaseEventType"
       - Name: EventSource
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: {"IdType":2,"Id":"367f0ff99b8d0ceef92a11393849ed7e","Namespace":32}
+        Value: "/Objects/Level2Optix/Model/mod"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":58}
+          Value: "/Types/ObjectTypes/BaseObjectType"
       - Name: MonitorSubtree
         Type: PropertyType
         DataType: Boolean
@@ -887,28 +820,15 @@ Children:
     - Name: EventTypeId
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: LocalTime
       Type: BaseDataVariableType
       DataType: TimeZoneDataType
-      Value: 
-       {
-        "TypeId": {
-         "Id": 8912
-        },
-        "Body": {
-         "offset": 0,
-         "daylightSavingInOffset": false
-        }
-       }
     - Name: SourceNode
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: ClientUserId
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: NewValue
       Type: BaseDataVariableType
       DataType: BaseDataType
@@ -924,11 +844,9 @@ Children:
       Type: EventFieldToLog
       DataType: UtcTime
       ValueRank: Any
-      Value: "1601-01-01T00:00:00.0000000"
     - Name: ClientUserId
       Type: EventFieldToLog
       DataType: String
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -948,7 +866,6 @@ Children:
       Type: EventFieldToLog
       DataType: Int32
       ValueRank: Any
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -958,7 +875,6 @@ Children:
       Type: EventFieldToLog
       DataType: Int32
       ValueRank: Any
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink

@@ -8,17 +8,14 @@ Children:
   DataType: Int32
   Value: 14
 - Name: Variable2
-  Id: g=eef80ec042df7d2f052ba0af56dd116e
   Type: BaseDataVariableType
   DataType: Int32
   Value: 30
 - Name: Variable3
-  Id: g=a50db88e3173b7f2ceae95f788ef0916
   Type: BaseDataVariableType
   DataType: Int32
   Value: 55
 - Name: Variable4
-  Id: g=73b37501a5de5afefd05c1d220ed178e
   Type: BaseDataVariableType
   DataType: Int32
   Value: 86

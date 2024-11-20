@@ -30,35 +30,27 @@ Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: LocalTimestamp
           Type: StoreColumn
           DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Temperature
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: Variable1
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: Variable2
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: Variable3
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: Variable4
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: Ingredient1
           Type: StoreColumn
           DataType: Int32
-          Value: 0
     - Name: RecipeSchema1
       Type: SQLiteStoreTable
       Children:
@@ -80,19 +72,15 @@ Children:
         - Name: Name
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: /Variables/Temperature
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: /Variables/Ingredient1
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: /Variables/Ingredient2
           Type: StoreColumn
           DataType: Int32
-          Value: 0
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
@@ -103,19 +91,16 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: MaxColumnCount
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: DataTypeCompatibilityMap
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
-    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
   - Name: Status
     Type: PropertyType
     DataType: StoreStatus
@@ -182,31 +167,24 @@ Children:
         - Name: EventType
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: SourceName
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: SourceNode
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: Time
           Type: StoreColumn
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ClientUserId
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: NewValue
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: OldValue
           Type: StoreColumn
           DataType: Int32
-          Value: 0
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
@@ -217,19 +195,16 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: MaxColumnCount
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: DataTypeCompatibilityMap
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
-    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
   - Name: Status
     Type: PropertyType
     DataType: StoreStatus
@@ -296,43 +271,33 @@ Children:
         - Name: ActiveState_Id
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: AckedState_Id
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: ConfirmedState_Id
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: ConditionName
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: EnabledState_Id
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: SourceName
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: Time
           Type: StoreColumn
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: 'Message_en-US'
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: Severity
           Type: StoreColumn
           DataType: UInt16
-          Value: 0
         - Name: LocalTime
           Type: StoreColumn
           DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
@@ -343,19 +308,16 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: MaxColumnCount
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: DataTypeCompatibilityMap
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
-    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
   - Name: Status
     Type: PropertyType
     DataType: StoreStatus
@@ -422,27 +384,21 @@ Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: LocalTimestamp
           Type: StoreColumn
           DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: VariableToSample1
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: VariableToSample2
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: VariableToSample3
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: VariableToSample4
           Type: StoreColumn
           DataType: Int32
-          Value: 0
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
@@ -453,19 +409,16 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: MaxColumnCount
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: DataTypeCompatibilityMap
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
-    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
   - Name: Status
     Type: PropertyType
     DataType: StoreStatus
@@ -532,23 +485,18 @@ Children:
         - Name: Time
           Type: StoreColumn
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ClientUserId
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: SourceNode
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: NewValue
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: OldValue
           Type: StoreColumn
           DataType: Int32
-          Value: 0
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
@@ -559,19 +507,16 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: MaxColumnCount
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: DataTypeCompatibilityMap
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
-    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
   - Name: Status
     Type: PropertyType
     DataType: StoreStatus

@@ -14,15 +14,12 @@ Children:
       - Name: Temperature
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Ingredient1
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Ingredient2
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
   - Class: Reference
     Target: ns=17;i=27
     Direction: Forward
@@ -62,21 +59,20 @@ Children:
   - Name: TargetNode
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"be18e489f72335ef41ffad5dd0f8727b","Namespace":32}
+    Value: "/Objects/Level2Optix/Model"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"37fd3b3a84010044dc1912717caa6ac5","Namespace":32}
+    Value: "/Objects/Level2Optix/DataStores/DataLogDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":11}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: EditModel
     Id: g=81b38ce5bd25fd3e309b8e14d1e900e8
     Type: BaseObjectType
@@ -87,12 +83,9 @@ Children:
       - Name: Temperature
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Ingredient1
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Ingredient2
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0

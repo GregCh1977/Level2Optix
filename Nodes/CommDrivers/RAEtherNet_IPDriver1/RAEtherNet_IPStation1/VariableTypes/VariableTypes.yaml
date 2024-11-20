@@ -6,26 +6,10 @@ Children:
   Supertype: TagStructure
   DataType: Motor
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "71afbedc4eb4ecabdc8e96f422b4e630",
-     "Namespace": 32
-    },
-    "Body": {
-     "CmdOffOn": false,
-     "Power": 0.0,
-     "SetSpeed": 0,
-     "Speed": 0,
-     "Status": false
-    }
-   }
   Children:
   - Name: CmdOffOn
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -34,7 +18,6 @@ Children:
   - Name: Power
     Type: RAEtherNetIPTag
     DataType: Float
-    Value: 0.0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -43,7 +26,6 @@ Children:
   - Name: SetSpeed
     Type: RAEtherNetIPTag
     DataType: Int16
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -52,7 +34,6 @@ Children:
   - Name: Speed
     Type: RAEtherNetIPTag
     DataType: Int16
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -61,7 +42,6 @@ Children:
   - Name: Status
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType

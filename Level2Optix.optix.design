@@ -5,8 +5,8 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.2
- CoreVersion: 2.0
+ ProductVersion: 1.5
+ CoreVersion: 4.0
  Dependencies:
   2:
    Uri: Level2Optix
@@ -14,11 +14,11 @@ Project:
   3:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 2.1
+   Version: 4.0
   4:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.0
+   Version: 1.1
   5:
    Uri: 'urn:FTOptix:TagImporter'
    Module: FTOptix.TagImporter
@@ -30,7 +30,18 @@ Project:
   7:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
-   Version: 1.0
+   Version: 4.0
+ Statistics:
+  TotalNodeCount: 7
+  Objects: 2
+  ObjectTypes: 0
+  Variables: 5
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 0
+  References: 0
+  ReferenceTypes: 0
+  Files: 2
  Nodes:
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/RAEtherNet_IPDriver2/RAEtherNet_IPStation2/TagImporter.yaml
